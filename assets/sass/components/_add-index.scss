@@ -1,0 +1,12 @@
+.index__add {
+  width: 104rem;
+  margin: 10rem auto;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-primary-light, 0.5),
+    rgba($color-primary-dark, 0.5)
+  );
+  box-shadow: 0 1.4rem 2rem rgba($color-black, $alpha: 0.2);
+  border-radius: 3px;
+  padding: 5rem;
+}

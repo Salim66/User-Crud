@@ -1,0 +1,11 @@
+{
+  "name": "advance-crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/main.css --watch"
+  },
+  "author": "salim",
+  "license": "ISC"
+}

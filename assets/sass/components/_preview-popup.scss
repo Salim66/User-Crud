@@ -1,0 +1,38 @@
+// Preview popup
+
+.pre__view:hover .preview__popup {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+
+  .preview__popup--content {
+    @include absView;
+    width: 10%;
+    background-color: $color-white;
+    padding: 2rem;
+    box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+    border-radius: 3px;
+    transition: all 0.5s 0.2s;
+  }
+
+  .preview__popup--img {
+    display: block;
+    width: 5rem;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 50%;
+    border: 2px solid $color-primary;
+    box-shadow: 0 1.5rem 2rem rgba($color-primary, $alpha: 0.4);
+  }
+
+  .preview__popup--name {
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 1.5rem;
+    color: $color-grey-light-3;
+  }
+}

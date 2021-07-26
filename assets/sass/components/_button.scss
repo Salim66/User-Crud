@@ -1,0 +1,146 @@
+.list {
+  // primary button
+  &__item {
+    &--button {
+      &,
+      &:link,
+      &:visited {
+        float: right;
+        display: inline-block;
+        padding: 0.7rem 2rem;
+        border-radius: 10rem;
+        border: none;
+        box-shadow: 0 1.4rem 2rem rgba($color-black, $alpha: 0.05);
+        text-decoration: none;
+        position: relative;
+        transition: all 0.2s;
+      }
+
+      &:hover {
+        box-shadow: 0 1rem 2rem rgba($color-black, $alpha: 0.2);
+        transform: translateY(-0.3rem);
+        &::after {
+          transform: scaleX(1.4) scaleY(1.6);
+          opacity: 0;
+        }
+      }
+
+      &:active,
+      &:focus {
+        box-shadow: 0 0.5rem 1rem rgba($color-black, $alpha: 0.2);
+        transform: translateY(-0.1rem);
+        opacity: 1;
+      }
+
+      &-white {
+        background-color: $color-white;
+        color: $color-grey-light-4;
+        font-size: $default-font-size;
+
+        &::after {
+          background-color: $color-white;
+        }
+      }
+
+      &-size {
+        height: 4rem;
+        margin-top: 2rem;
+      }
+
+      &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all 0.4s;
+      }
+    }
+  }
+
+  // table action button
+  &__item2 {
+    &--button {
+      &,
+      &:link,
+      &:visited {
+        height: 3rem;
+        float: right;
+        display: inline-block;
+        padding: 0.2rem 0.7rem;
+        border-radius: 1rem;
+        border: none;
+        box-shadow: 0 1.4rem 2rem rgba($color-black, $alpha: 0.05);
+        text-decoration: none;
+        position: relative;
+        transition: all 0.2s;
+
+        &:not(:last-child) {
+          margin-right: 0.5rem;
+        }
+      }
+
+      &:hover {
+        box-shadow: 0 1rem 2rem rgba($color-black, $alpha: 0.2);
+        transform: translateY(-0.3rem);
+        &::after {
+          transform: scaleX(1.4) scaleY(1.6);
+          opacity: 0;
+        }
+      }
+
+      &:active,
+      &:focus {
+        box-shadow: 0 0.5rem 1rem rgba($color-black, $alpha: 0.2);
+        transform: translateY(-0.1rem);
+        opacity: 1;
+      }
+
+      // table buttons
+      &-view {
+        background-color: $color-secondary-dark;
+        color: $color-white;
+        font-size: $default-font-size;
+
+        &::after {
+          background-color: $color-secondary-dark;
+        }
+      }
+      &-edit {
+        background-color: $color-pink-light;
+        color: $color-white;
+        font-size: $default-font-size;
+
+        &::after {
+          background-color: $color-pink-light;
+        }
+      }
+      &-delete {
+        background-color: $color-clear-chill;
+        color: $color-white;
+        font-size: $default-font-size;
+
+        &::after {
+          background-color: $color-clear-chill;
+        }
+      }
+
+      &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all 0.4s;
+      }
+    }
+  }
+}
